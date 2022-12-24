@@ -1,0 +1,32 @@
+
+名称:person
+文件版本:1.0
+修改时间:2022.11.2
+修改人:-----
+修改内容:
+	1)
+		添加新类person,用于存储被进行心理测试的人的个性化数据
+		属性:
+			string:
+				name -->姓名
+				sex -->性别
+				ID -->用户唯一标识ID
+				solution -->解决方案
+				file_path -->用户数据存储路径
+			size_t(unsigned int):
+				score -->用户通过测试后的成绩(可以被改写)
+			
+		2)
+		void set_name(const string)方法
+			允许修改用户的name属性
+				--如果出现同名现象,则进行ID比较
+		3)
+			void set_score()方法
+			允许修改用户的score属性
+		4)
+			void set_file_path(const string)
+			修改数据存储路径
+		5)
+			void set_solution(string,string)
+				--必须要进行对数据存储位置的设置后才可以进行个性化的解决方案
+		

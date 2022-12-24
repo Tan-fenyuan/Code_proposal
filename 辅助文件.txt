@@ -1,0 +1,14 @@
+/*
+
+#include <filesystem>
+
+using namespace std;
+using std::filesystem::current_path;
+
+int main() {
+    cout << "Current working directory: " << current_path() << endl;
+	return 0;
+}
+*/
+上为获取程序运行的绝对路径,方便进行文件的写入和读取
+因为用户的数据会在这个绝对路径下进行保存
